@@ -30,6 +30,22 @@ public class SLLMain23 {
         sll.insertAfter(mhsArray[1].nama, mhsArray[2]);
         sll.insertAt(2, mhsArray[3]);
         sll.print();
+
+        System.out.println("Data pada index 1: ");
+        sll.getData(1);
+        
+        System.out.println("Data mahasiswa bernama "+ mhsArray[2] +" berada pada index: " + sll.indexOf(mhsArray[2].nama));
+        System.out.println();
+
+        System.out.println("--- Menghapus data pertama dan terakhir ---");
+        sll.removeFirst();
+        sll.removeLast();
+        sll.print();
+
+        System.out.println("--- Menghapus data pada index 0 ---");
+        sll.removeAt(0);
+        sll.print();
+
         sc.close();
     }
 }
