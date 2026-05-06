@@ -58,6 +58,16 @@
 
 ##  Soal
 
+1.  Mengapa digunakan keyword break pada fungsi remove? Jelaskan!
+2.  Jelaskan kegunaan kode dibawah pada method remove
+
+    ```java
+        temp.next = temp.next.next;
+        if (temp.next == null){
+            tail = temp
+        }
+    ```
+
 ---
 
 ##  Jawaban
