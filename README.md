@@ -62,4 +62,7 @@
 
 ##  Jawaban
 
+1.  Keyword <mark>break</mark> digunakan untuk segera menghentikan proses perulangan (while atau do-while) setelah node yang dicari berhasil ditemukan dan dihapus. Karena target penghapusan dalam method ini biasanya hanya satu data berdasarkan kunci (key) tertentu, maka meneruskan iterasi sampai akhir list setelah data ditemukan menjadi tidak efisien secara komputasi.
+2.  <mark>temp.next = temp.next.next<mark> Kode ini berfungsi untuk memutuskan hubungan node yang akan dihapus dari dalam list. Caranya adalah dengan mengubah referensi <mark>next</mark> pada node <mark>temp</mark> (node sebelum target) agar langsung menunjuk ke node setelah target penghapusan, sehingga node target tersebut terlewati dan terhapus dari struktur list. Lalu <mark>if (temp.next == null) { tail = temp; }<mark> Potongan kode ini berfungsi untuk menangani kasus jika node yang dihapus berada di posisi paling akhir. Jika setelah penghapusan ternyata <mark>temp.next</mark> bernilai <mark>null</mark>, itu berarti <mark>temp</mark> kini menjadi node terakhir, sehingga referensi <mark>tail</mark> harus diperbarui untuk menunjuk ke node <mark>temp</mark> tersebut agar alamat ujung list tetap akurat.
+
 ---
